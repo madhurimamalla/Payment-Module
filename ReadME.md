@@ -12,9 +12,8 @@
 1. Create a javascript file, say creditcard.js and write the entire processor logic and the view logic in this file and save it in the js folder <br>
 
 2. In the paymentMethods.js file, which is the where we control the logic of paymentMethods.html, add code like this,
-    a. Add the 'creditcard' to the dependencies in the define() and when it's done it'll look like this, ['wallet','debitcard', 'creditcard', 'order'] and the function(wallet,debitcard,creditcard,order)
-    
-    b. Also, add: <br>
+- Add the 'creditcard' to the dependencies in the define() and when it's done it'll look like this, ['wallet','debitcard', 'creditcard', 'order'] and the function(wallet,debitcard,creditcard,order)
+- Also, add: <br>
     <code> creditcard.init(); 
      $('#creditcard').click(function () { 
         $('#walletClick').html(creditcard.creditcardView.render().el);
